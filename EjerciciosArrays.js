@@ -54,7 +54,6 @@ let notas = [3,9,10,7,5,6];
 let marcaAsignatura;
 
 for( let i = 0; i <= asignaturas.length-1; i++ ){
-    console.log(notas[i]);
     if(notas[i] < 5){
         marcaAsignatura = "Suspenso";
     } else if (notas[i] >= 5 && notas[i] < 7) {
