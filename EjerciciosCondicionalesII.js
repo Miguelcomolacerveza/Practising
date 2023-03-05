@@ -1,5 +1,11 @@
 // Ejercicios Condicionales II
 
+// Ejercicio 1
+
+console.log("Ejercicio 1");
+
+/* Creo una función para comprobar que el número introducido 
+por el usuario es válido para hacer el calculo del área */
 
 function verificacionSiEsNumero(numero){   
     for(let i = 0; i < numero.length;i++){
@@ -21,12 +27,6 @@ function verificacionSiEsNumero(numero){
         return numero; 
     }
 }
-
-// Ejercicio 1
-
-console.log("Ejercicio 1");
-
-
 
 /*
 Nota: Al pasarle un número a través del prompt realmente estoy pasando a la función verificaciónSiEsNumero()
