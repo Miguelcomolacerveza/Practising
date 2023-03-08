@@ -1,6 +1,6 @@
-//Ejercicios Funciones
+// Ejercicios Funciones
 
-//Ejercicio 1
+// Ejercicio 1
 
 console.log("Ejercicio 1");
 
@@ -36,7 +36,7 @@ let numeroUsuario = convertirCadenaNumero("Inserta un numero");
 let sumaTotalSumaPares = sumaPares(numeroUsuario);
 console.log("La suma total de los numeros es " + sumaTotalSumaPares);
 
-//Ejercicio 2
+// Ejercicio 2
 
 console.log("Ejercicio 2");
 
@@ -53,7 +53,7 @@ let alturaTriangulo = convertirCadenaNumero("Inserta la altura");
 
 console.log("El area total del triángulo es: " + areaTriangulo(baseTriangulo,alturaTriangulo));
 
-//Ejercicio 3
+// Ejercicio 3
 
 console.log("Ejercicio 3");
 
@@ -62,9 +62,7 @@ function factorial(numeroDelUsuario) {
     let factorialDelNumero = 1;
     let numerosQueSeMultiplican = "";
     for(let i = 1; i <= numeroDelUsuario; i++){
-
-// Todos los números que se multiplican
-
+    // Todos los números que se multiplican
                   factorialDelNumero *= i;
                   numerosQueSeMultiplican+= "" + i + " "
         }    
@@ -72,10 +70,9 @@ function factorial(numeroDelUsuario) {
     return factorialDelNumero;
 }
 
-let numeroFactorialUsuario = convertirCadenaNumero("Inserta un numero");
+  let numeroFactorialUsuario = convertirCadenaNumero("Inserta un numero");
 
-/* Llamo a la función que calcula el factorial del numero insertado
- y muestro el resultado por pantalla */
-
- let factorialTotal = factorial(numeroFactorialUsuario);
+// Llamo a la función que calcula el factorial del numero insertado
+  let factorialTotal = factorial(numeroFactorialUsuario);
+//
  console.log("El factorial del numero " + numeroFactorialUsuario + " es: " + factorialTotal);
