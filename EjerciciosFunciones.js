@@ -65,7 +65,7 @@ function factorial(numeroDelUsuario) {
     for(let i = 1; i <= numeroDelUsuario; i++){
     // Todos los números que se multiplican
                   factorialDelNumero *= i;
-                  numerosQueSeMultiplican+= "" + i + " "
+                  numerosQueSeMultiplican+= "" + i + " ";
         }    
     console.log(numerosQueSeMultiplican);
     return factorialDelNumero;
