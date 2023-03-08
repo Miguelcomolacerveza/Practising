@@ -4,7 +4,7 @@
 
 console.log("Ejercicio 1");
 
-// Creo función para convertir los datos que introduce el usuario en int
+// Creamos la función para convertir los datos que introduce el usuario en int
 
 function convertirCadenaNumero(cadena) {
     let numero = prompt(cadena);
@@ -12,7 +12,7 @@ function convertirCadenaNumero(cadena) {
     return numero;
 }
 
-// Creo función para sumar los números pares
+// Creamos la función para sumar los números pares
 
 function sumaPares(numeroDelUsuario) {
     let sumaTotal = 0;
@@ -27,10 +27,10 @@ function sumaPares(numeroDelUsuario) {
     return sumaTotal;
 }
 
-// Llamo a la función para convertir número
+// Llamamos a la función para convertir número
 let numeroUsuario = convertirCadenaNumero("Inserta un numero");
 
-/* Llamo a la función que calcula la suma de los pares
+/* Llamamos a la función que calcula la suma de los pares
  y muestro el resultado por pantalla */
 
 let sumaTotalSumaPares = sumaPares(numeroUsuario);
@@ -57,6 +57,7 @@ console.log("El area total del triángulo es: " + areaTriangulo(baseTriangulo,al
 
 console.log("Ejercicio 3");
 
+// Creamos la función para calcular el factorial
 
 function factorial(numeroDelUsuario) {
     let factorialDelNumero = 1;
@@ -74,5 +75,5 @@ function factorial(numeroDelUsuario) {
 
 // Llamo a la función que calcula el factorial del numero insertado
   let factorialTotal = factorial(numeroFactorialUsuario);
-//
+//Muestro por pantalla el resultado
  console.log("El factorial del numero " + numeroFactorialUsuario + " es: " + factorialTotal);
