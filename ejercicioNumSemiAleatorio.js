@@ -8,7 +8,7 @@ function convertirCadenaNumero(cadena) {
     return numero;
 }
 
-// Creamos Numero Aleatorio y lo redondeo
+// Creamos Numero Aleatorio y lo redondeamos
 
 let numeroAleatorio = (Math.random() * 10);
 let numeroRedondeado = Math.floor(numeroAleatorio);
