@@ -1,9 +1,9 @@
 // Función para comprobar si es hombre o mujer
-export function averiguarSexo() {
+ function averiguarSexo() {
     let ejecutaPreguntaSexo = true;
     let sexo;
     while(ejecutaPreguntaSexo) {
-        sexo = prompt("Inserta tu sexo (H/h) para hombre, (M/m) para mujer");
+        sexo = prompt("Inserta tu sexo (H/h) para hombre, (M/m) para mujer ");
         if(sexo == 'H' || sexo == 'h') {
             //Es un hombre
             sexo = 'Hombre';
@@ -14,7 +14,7 @@ export function averiguarSexo() {
             ejecutaPreguntaSexo = false;
         } else {
             // No nos han introducido un sexo valido
-            console.log("Eso no funciono! vuelve a intentarlo");
+            console.log("Eso no funciono! vuelve a intentarlo ");
         }
     }
     return sexo;
@@ -22,16 +22,16 @@ export function averiguarSexo() {
 
 // Función averiguar objetivo
 
-export function averiguarObjetivo(){
+ function averiguarObjetivo(){
     ejecutaPreguntaObjetivo = true;
     let objetivoPersona;
     while(ejecutaPreguntaObjetivo) {
-        objetivoPersona = parseInt(prompt("Inserta tu objetivo"));
+        objetivoPersona = parseInt(prompt("Inserta tu objetivo "));
         if(objetivoPersona === 1 || objetivoPersona === 2 || objetivoPersona === 3) {
             ejecutaPreguntaObjetivo = false;
         } else {
             // No nos han introducido un objetivo valido
-            console.log("Eso no funciono! Vuelve a intentarlo!");
+            console.log("Eso no funciono! Vuelve a intentarlo! ");
         }
     }
     return objetivoPersona;
@@ -39,17 +39,17 @@ export function averiguarObjetivo(){
 
 // Función para comprobar cuanto ejercicio realiza
 
-export function averiguarEjercicio(){
+ function averiguarEjercicio(){
         // Pedimos el objetivo
         let ejecutaPreguntaEjercicio = true;
         let ejercicioPersona;
         while(ejecutaPreguntaEjercicio) {
-            ejercicioPersona = parseInt(prompt("¿Cuanto ejercicio haces?"));
+            ejercicioPersona = parseInt(prompt("¿Cuanto ejercicio haces? "));
             if(ejercicioPersona === 1 || ejercicioPersona === 2 || ejercicioPersona === 3 || ejercicioPersona === 4 || ejercicioPersona === 5) {
                  ejecutaPreguntaEjercicio = false;
             } else {
                 // No nos han introducido un objetivo valido
-                console.log("Eso no funciono! Vuelve a intentarlo! Introduce cuanto ejercicio haces de nuevo");
+                console.log("Eso no funciono! Vuelve a intentarlo! Introduce cuanto ejercicio haces de nuevo ");
             }
         }
         return ejercicioPersona;
@@ -57,10 +57,10 @@ export function averiguarEjercicio(){
 
 // Función para comprobar cual es su objetivo 
 
-export function averiguarObjetivos(){
+ function averiguarObjetivos(){
     let ejecutaPreguntaObjetivo = true;
     while(ejecutaPreguntaObjetivo) {
-        objetivoPersona = parseInt(prompt("Inserta tu objetivo"));
+        objetivoPersona = parseInt(prompt("Inserta tu objetivo "));
         if(objetivoPersona === 1 || objetivoPersona === 2 || objetivoPersona === 3) {
             ejecutaPreguntaObjetivo = false;
         } else {
@@ -74,13 +74,13 @@ export function averiguarObjetivos(){
 /*Función para comprobar peso, edad y altura
   Dato solicitado puede ser peso, edad o altura */
 
-export function averiguarDatos(datoSolicitado, minimo, maximo){
+ function averiguarDatos(datoSolicitado, minimo, maximo){
     let ejecutaPreguntaDatos = true;
     let datoUsuario; 
     while(ejecutaPreguntaDatos) {
-        datoUsuario = parseInt(prompt("Inserta tu " + datoSolicitado));
+        datoUsuario = parseInt(prompt("Inserta tu " + datoSolicitado + ": "));
         if(datoUsuario < minimo || datoUsuario > maximo) {
-            console.log("Eso no funciono! Inserta valor correcto");
+            console.log("Eso no funciono! Inserta valor correcto ");
         } else {
             ejecutaPreguntaDatos = false;
         }
@@ -90,7 +90,7 @@ export function averiguarDatos(datoSolicitado, minimo, maximo){
 
 /*Función para comprobar calorias según el sexo */
 
-export function caloriasSexo(sexoPersona,pesoPersona, edadPersona, alturaPersona) {
+ function caloriasSexo(sexoPersona,pesoPersona, edadPersona, alturaPersona) {
     TMB_Sexo = ((10 * pesoPersona) + (6.25 * alturaPersona) + (5 * edadPersona))
     if(sexoPersona === 'Hombre') {
         TMB_Sexo += 5;
@@ -102,7 +102,7 @@ export function caloriasSexo(sexoPersona,pesoPersona, edadPersona, alturaPersona
 
 /*Función para comprobar calorias totales según objetivo */
 
-export function caloriasTotales(TMB_Sexo, ejercicioPersona, objetivoPersona) { 
+ function caloriasTotales(TMB_Sexo, ejercicioPersona, objetivoPersona) { 
     const CALORIAS = {
         1 : (TMB_Sexo * 1.2),
         2 : (TMB_Sexo * 1.375),
@@ -124,10 +124,10 @@ export function caloriasTotales(TMB_Sexo, ejercicioPersona, objetivoPersona) {
 
 // Función para volver a empezar o salir del programa.
 
-export function continuarSalirPrograma() {
+ function continuarSalirPrograma() {
     let ejecutaPrograma2 = true; 
         while(ejecutaPrograma2){
-            continuarPrograma = parseInt(prompt("Quieres volver a responder el formulario? 1: Para continuar, 2 Para salir"));
+            continuarPrograma = parseInt(prompt("Quieres volver a responder el formulario? 1: Para continuar, 2 Para salir "));
             if(continuarPrograma == 2){
                 ejecutaPrograma = false;
                 ejecutaPrograma2 = false;
@@ -140,4 +140,3 @@ export function continuarSalirPrograma() {
         }
             ejecutaPrograma2 = false;
 }
-
