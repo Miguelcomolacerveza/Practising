@@ -1,4 +1,6 @@
-import { averiguarSexo, averiguarObjetivo, averiguarEjercicio, averiguarDatos, caloriasSexo, caloriasTotales} from './funcionesDieta';
+let prompt = require('prompt-sync')();
+let fs = require('fs');
+eval(fs.readFileSync('funcionesDieta.js')+'');
 
 let ejecutaPrograma = true;
 let TMB_Sexo;
