@@ -1,6 +1,6 @@
-// Ejercicio 9: Define una función llamada "palindromo" que reciba un parámetro que sea una palabra y 
-// retorne un valor booleano indicando si la palabra es un palíndromo o no.
-// Un palíndromo es una palabra que se lee igual de izquierda a derecha que de derecha a izquierda.
+/* Ejercicio 9: Define una función llamada "palindromo" que reciba un parámetro que sea una palabra y 
+retorne un valor booleano indicando si la palabra es un palíndromo o no.
+Un palíndromo es una palabra que se lee igual de izquierda a derecha que de derecha a izquierda. */
  
 function palindromo(cadena) {
 
