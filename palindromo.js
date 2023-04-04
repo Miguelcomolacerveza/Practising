@@ -4,9 +4,9 @@ Un palíndromo es una palabra que se lee igual de izquierda a derecha que de der
  
 function palindromo(cadena) {
 
-  // Dejamos la cadena sin espacios ya que de lo contrario da error al hacer el bucle.
-  // /s+ Se aplica para que afecte a uno o más espacios
-  // /g se usa para comprobar todas las combinaciones posibles, en este caso espacios
+  /* Dejamos la cadena sin espacios ya que de lo contrario da error al hacer el bucle.
+   /s+ Se aplica para que afecte a uno o más espacios
+   /g se usa para comprobar todas las combinaciones posibles, en este caso espacios */
   
 
   let cadenaSinEspacios = cadena.replace(/\s+/g, '');
